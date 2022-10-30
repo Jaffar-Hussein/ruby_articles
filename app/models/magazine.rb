@@ -28,7 +28,7 @@ class Magazine
   def article_titles
     article_ = []
     @contributors.each do |author|
-      author.collection.each do |article|
+      author.articles.each do |article|
         article_ << article.title if article.magazine == name
       end
     end
@@ -39,7 +39,7 @@ class Magazine
     counter = 0
     authors = []
     @contributors.map do |author|
-      author.collection.each do |article|
+      author.articles.each do |article|
         counter += 1 if article.magazine == name
       end
       authors << author.name if counter >= 2
