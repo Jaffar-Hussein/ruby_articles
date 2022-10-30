@@ -42,9 +42,9 @@ author = funny3.author
 magazine = funny3.magazine
 
 # Testing deliverable 5.1:Author#articles
-author_articles = hus.collection
+author_articles = hus.articles
 # Testing deliverable 5.2:Author#magazines
-author_magazines = hus.contribuitions
+author_magazines = hus.magazines
 # Testing deliverable 5.3:Magazine#contributors
 contrib = drama.contributors
 
@@ -63,5 +63,3 @@ contrib_authors = drama.contributing_authors
 # Testing deliverable
 ### DO NOT REMOVE THIS
 binding.pry
-
-0

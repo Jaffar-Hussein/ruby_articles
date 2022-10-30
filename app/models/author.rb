@@ -1,18 +1,18 @@
 class Author
-  attr_reader :name, :collection, :contribuitions
+  attr_reader :name, :articles, :magazines
 
   def initialize(name)
     @name = name
-    @collection = []
-    @contribuitions = []
+    @articles = []
+    @magazines = []
   end
 
   def update_collection(article)
-    @collection << article
+    @articles << article
   end
 
   def update_contributions(magazine)
-    @contribuitions << magazine
+    @magazines << magazine
   end
 
   def add_article(magazine, title)
@@ -21,8 +21,8 @@ class Author
 
   def topic_areas
     categories = []
-    if @contribuitions
-      @contribuitions.collect do |magazine|
+    if @magazines
+      @magazines.collect do |magazine|
         categories << magazine.category
       end
     end
